@@ -107,6 +107,27 @@ export default function Home(){
           </h1>
         <PPT_Carousel/>
       </div>
+      <div className="flex flex-col w-full  h-[600px] md:h-[720px] gap-y-6 items-center px-4">
+        <h1 className="text-[36px] font-medium">
+          影音作品圖冊
+        </h1>
+        <iframe
+          src="https://drive.google.com/file/d/198jzgzPQwjxMnQ7RnmiVgAt2VSxNNR4E/preview"
+          width="100%"
+          height="100%"
+          allow="autoplay"
+          allowFullScreen
+          className="rounded-lg w-[360px] md:w-[572px]"
+        />
+        <iframe
+          src="https://drive.google.com/file/d/1FTkzDmvzlQ42u3xGtv7ngaAVfEx-5o0f/preview"
+          width="100%"
+          height="100%"
+          allow="autoplay"
+          allowFullScreen
+          className="rounded-lg w-[360px] md:w-[572px]"
+        />
+      </div>
       {/* 文案／企劃書 */}
       <div className="flex flex-col gap-y-6 items-center">
           <h1 className="text-[36px] font-medium">

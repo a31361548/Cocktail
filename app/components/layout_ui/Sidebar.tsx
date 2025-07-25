@@ -9,7 +9,7 @@ export default function Sidebar() {
   return (
     <div className="relative w-full">
       {/* 導覽列 */}
-      <div className="h-12 bg-[linear-gradient(135deg,_#e0c3fc,_#fbc2eb,_#a18cd1,_#fbc2eb,_#e0c3fc)] flex w-full p-2">
+      <div className="h-12 bg-[linear-gradient(135deg,_#e0c3fc,_#fbc2eb,_#a18cd1,_#fbc2eb,_#e0c3fc)] flex w-full p-2 ">
 
         <div className="flex-1 text-center">
           <span className="text-2xl font-bold text-white">13隻小豬</span>
@@ -32,7 +32,7 @@ export default function Sidebar() {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 300, opacity: 0 }}
             transition={{ type: "tween", duration: 0.3 }}
-            className="fixed top-0 right-0 h-full w-[288px] bg-[var(--red)] backdrop-blur z-[99] p-2"
+            className="fixed top-0 right-0 h-full  w-[144px] md:w-[288px] bg-[var(--red)] backdrop-blur z-[99] p-2"
           >
             <Image
               src="/image/close-white.svg"
