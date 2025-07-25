@@ -4,6 +4,7 @@ import PosterSwiper from "./components/layout_ui/PosterSwiper"
 import { TbTargetArrow } from "react-icons/tb";
 import { RiFilePpt2Fill } from "react-icons/ri";
 import { PiPencilBold,PiPaletteBold  } from "react-icons/pi";
+import PPT_Carousel from "./components/layout_ui/PPT_Carousel";
 
 export default function Home(){
   return(
@@ -67,9 +68,65 @@ export default function Home(){
           </span>
         </div>
       </div>
+      {/* 海報 */}
       <div className="flex flex-col gap-y-6 items-center">
-          <h1 className="text-[36px] font-medium">海報</h1>
-        <PosterSwiper/>
+          <h1 className="text-[36px] font-medium">
+            海報
+            <a 
+              href="https://drive.google.com/drive/folders/1vJ1UqVR5QZ1aOQMQ2QNpDATrfJ_iRLae"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline text-[24px]"
+            >
+              (作品連結)
+            </a>
+          </h1>
+        <PosterSwiper
+          posters={[
+            "/image/png/反毒海報1.png",
+            "/image/png/反毒海報2.png",
+            "/image/png/性剝削海報.jpg",
+            "/image/png/家暴海報.png",
+            "/image/png/網路安全海報.png",
+            "/image/png/臺語推廣.png"
+          ]}
+        />
+      </div>
+      {/* PPT */}
+      <div className="flex flex-col gap-y-6 items-center">
+          <h1 className="text-[36px] font-medium">
+            PPT模板
+            <a 
+              href="https://drive.google.com/drive/folders/1abzIkNG-QAdY9he0kUGRaK18wdvBM_je"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline text-[24px]"
+            >
+              (完整PPT連結)
+            </a>
+          </h1>
+        <PPT_Carousel/>
+      </div>
+      {/* 文案／企劃書 */}
+      <div className="flex flex-col gap-y-6 items-center">
+          <h1 className="text-[36px] font-medium">
+            文案／企劃書
+            <a 
+              href="https://drive.google.com/drive/folders/1OMqnKqcV8dBjYMSd2zzYTDDw7_l-8bF0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline text-[24px]"
+            >
+              (看完整 PDF)
+            </a>
+          </h1>
+          <PosterSwiper
+            posters={[
+              "/image/png/pdf_1.jpeg",
+              "/image/png/pdf_2.jpeg",
+              "/image/png/pdf_3.png",
+            ]}
+          />
       </div>
     </div>
   )
